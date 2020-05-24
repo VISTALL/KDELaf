@@ -1,0 +1,59 @@
+Done or started :
+KIconFactory::getIcon            Todo : "zip overlay" & "link overlay"
+[100%]	QButtonUI					Todo : KDE focus effect, pad...
+[100%]	QCheckBoxMenuItemUI  
+[100%]	QCheckBoxUI
+[100%]	QComboBoxUI		         Todo : Comments
+[10%]		QInternalFrameUI		   WIP (but seems stable)
+[10%]		QDesktopIconUI		      WIP (but seems stable)
+[10%]		QDesktopPaneUI          WIP (but seems stable)
+[100%]	QLabelUI
+[100%]	QListUI
+[100%]	QMenuItemUI
+[100%]	QMenuBarUI
+[100%]	QMenuUI
+[90%]	   OptionPaneUI
+[100%]	QProgressBarUI		Todo : Some work on indeterminate
+[100%]	QRadioButtonMenuItemUI 
+[100%]	QRadioButtonUI
+[100%]	SpinnerUI               Todo : bgColor + spaces + Bad rendering (The old version crashe style lipstik)
+[100%]	QTabbedPaneUI	         
+[50%]	   QTableHeaderUI	         Todo : Simulate KDE column drag
+[100%]	QTextFieldUI	         Todo : review it
+[100%]	QToolTipUI              Todo : use Qt to get border info
+[100%]	QToggleButtonUI
+[100%]	QToolBarUI	            Todo : Comments, Better floating window
+[100%]	QToolBarSeparatorUI	   Todo : Comments 
+[100%]	QTreeUI                 Todo : Todo : single-click selection if kde say so
+[90%]		KScrollBarUI		      Todo : Comments, shape, enabled, next + platinium style scrollbars
+[80%]		KFileChooserUI          WIP (but seems stable)
+[100%]	KColorChooserUI         WIP (but seems stable)
+classpath (0.20) specifics :
+[100%]	QTabbedPaneUI		Todo : Right tabs don't work with gcj/classpath0.20
+[100%]	QComboBoxUI		Todo : Bad renderer position, Editor his too big
+[100%]	QSliderUI
+
+
+
+
+next:
+QSeparatorUI
+QPasswordFieldUI
+QPopupMenuUI
+QPopupMenuSeparatorUI
+QSplitPaneUI
+QTextUI
+
+ignored (is there something to do in it) :
+QViewportUI
+QTableUI
+QTextAreaUI
+QTextPaneUI
+QRootPaneUI
+QScrollPaneUI
+QPanelUI
+QFormattedTextFieldUI
+QEditorPaneUI
+
+To do for all UIs :
+ - The Feel of "Look and Feel" (sound + shortcut(key combinaisons))

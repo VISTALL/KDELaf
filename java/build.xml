@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+	Pre:
+	 - - - Install Java jdk ant set the environment variable JAVA_HOME to the jdk install dir (example: "/opt/sun-jdk-1.4.2.05").
+	 - - - Install ant and add the ant/bin path to you PATH environment variable (example: "/usr/bin/").
+-->
+<project name="QtLookAndFeel" default="dist" basedir=".">
+	<target name="init">
+		<!-- location of the *.java files -->
+		<property name="srcPath" value="./src" />
+		<!-- location of the *.class files -->
+		<property name="classPath" value="./class" />
+		<!-- location of the *.gif files -->
+		<property name="iconsPath" value="${classPath}/org/freeasinspeech/kdelaf/icons" />
+		<!-- location of the final jar -->
+		<property name="distPath" value="./dist" />
+		<!-- name of the final jar -->
+		<property name="jarFile" value="KdeLAF.jar" />
+		<!-- name of the manifest file -->
+		<property name="manifestFile" value="KdeLAF.manifest" />
+		
+		<!-- sets the property "classPath.exists" to true when classPath exists -->
+		<condition property="classPath.exists">
+			<and>
+				<available file="${classPath}" type="dir"/>
+			</and>
+		</condition>
+		
+		<!-- sets the property "distPath.exists" to true when distPath exists -->
+		<condition property="distPath.exists">
+			<and>
+				<available file="${distPath}" type="dir"/>
+			</and>
+		</condition>
+	</target>
+	
+	<!-- Makes the classPath -->
+	<target name="makeClassPath" depends="init" unless="classPath.exists">
+		<mkdir dir="${classPath}"/>
+	</target>
+	
+	<!-- Makes the iconsPath -->
+	<target name="makeIconsPath" depends="init,makeClass" unless="iconsPath.exists">
+		<mkdir dir="${iconsPath}"/>
+		<copy todir="${iconsPath}">
+			<fileset dir="./hack/icons"/>
+		</copy>
+	</target>
+	
+	<!-- Makes the distPath -->
+	<target name="makeDistPath" depends="init" unless="distPath.exists">
+		<mkdir dir="${distPath}"/>
+	</target>	
+
+	<!-- Cleans all binaries. -->
+	<target name="clean" depends="init">
+        <delete dir="${classPath}"/>
+        <delete dir="${distPath}"/>
+	</target>
+	
+	<!-- Compile the java source code (binary version 1.4). -->
+	<target name="makeClass" depends="makeClassPath">
+		<javac srcdir="${srcPath}" destdir="${classPath}" source="1.4" target="1.4" deprecation="on">
+		</javac>
+	</target>
+	<!-- Makes the jar file. -->
+	<target name="dist" depends="makeClass,makeDistPath,makeIconsPath">
+		<jar destfile="${distPath}/${jarFile}" compress="false" update="true" index="true" basedir="${classPath}" manifest="${manifestFile}" />
+	</target>
+</project>

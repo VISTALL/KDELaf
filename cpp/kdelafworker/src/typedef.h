@@ -1,0 +1,152 @@
+#ifndef TYPEDEF_H
+#define TYPEDEF_H
+	#define int32 int
+	#define int16 short int
+	#define int8 char
+	#define uint8 unsigned char
+	#define unicodeChar unsigned short int
+	
+	// never below 4
+	#define MAX_PACKET_SIZE 20000
+
+	#define OP_KILL					1000
+	#define OP_GET_BASE_DEFAULTS			1001
+	#define OP_GET_COLOR_BY_KEY			1002
+	#define OP_GET_BUTTON_IMAGE			1003
+	#define OP_GET_PIXEL_METRIC			1004
+	#define OP_GET_KPIXEL_METRIC			1005
+	#define OP_GET_TAB_IMAGE			1006
+	#define OP_GET_MENUITEM_IMAGE			1007
+	#define OP_GET_CHECKBOXMENUITEM_IMAGE		1008
+	#define OP_GET_RADIOBUTTONMENUITEM_IMAGE	1009
+	#define OP_GET_MENU_IMAGE			1010
+	#define OP_GET_MENUBAR_IMAGE			1011
+	#define OP_GET_SIMPLEPREFERREDSIZE		1012
+	#define OP_GET_TOOLTIPDEFAULTS			1013
+	#define OP_GET_TOGGLEBUTTON_IMAGE		1014
+	#define OP_GET_TOOLBARSEPARATOR_IMAGE		1015
+	#define OP_GET_TOOLBARBACKGROUND_IMAGE		1016
+	#define OP_GET_TOOLBARHANDLE_IMAGE		1017
+	#define OP_GET_TREEDEFAULTS			1018
+	#define OP_GET_ICONPATHS			1019
+	#define OP_GET_COMBOBOX_DISPLAY_SIZE		1020
+	#define OP_GET_COMBOBOX_VALUE_RECT		1021
+	#define OP_GET_COMBOBOX_IMAGE			1022
+	#define OP_GET_TEXTFIELDDEFAULTS		1023
+	#define OP_GET_EXCLUSIVE_INDICATOR_DIM		1024
+	#define OP_GET_INDICATOR_DIM			1025
+	#define OP_GET_RADIOBUTTON_IMAGE		1026
+	#define OP_GET_CHECKBOX_IMAGE			1027
+	#define OP_GET_LABELDEFAULTS			1028
+	#define OP_GET_COMBOBOXDEFAULTS			1029
+	#define OP_GET_LOCALEPATHS			1030
+	#define OP_GET_MIMEPATHS			1031
+	#define OP_GET_MENUBUTTONINDICATOR_IMAGE	1032
+	#define OP_GET_CONFIGPATHS			1033
+	#define OP_GET_SCROLLBARTHUMB_IMAGE		1034
+	#define OP_GET_SCROLLBAR_METRIS			1035
+	#define OP_GET_SCROLLBARNEXT_IMAGE		1036
+	#define OP_GET_SCROLLBARPREV_IMAGE		1037
+	#define OP_GET_SCROLLBARTRACK_IMAGE		1038
+	#define OP_GET_SPINNER_IMAGE			1039
+	#define OP_GET_COMMON_IMAGE			1040
+	#define OP_GET_TITLE_BUTTON			1041
+	#define OP_GET_TABLEHEADER_IMAGE		1042
+	#define OP_GET_PROGRESSBAR_IMAGE		1043
+	#define OP_GET_SLIDERHANDLE_IMAGE		1044
+	#define OP_GET_SLIDERGROOVE_IMAGE		1045
+	#define OP_GET_THUMBTRACKOFFSET			1046
+	#define OP_GET_STYLE_NAME			1047
+	#define OP_GET_KDE_VERSION			1048
+	#define OP_GET_SCROLLBAR_IMAGE			1049
+	#define OP_GET_BUTTON_PREF_SZ			1050
+	#define OP_GET_TOOLBUTTON_PREF_SZ		1051
+
+
+	#define WT_BUTTON		0
+	#define WT_CHECKBOXMENUITEM	1
+	#define WT_CHECKBOX		2
+	#define WT_MENUBAR		3
+	#define WT_MENUITEM		4
+	#define WT_MENU			5
+	#define WT_POPUPMENU		6
+	#define WT_PROGRESSBAR		7
+	#define WT_RADIOBUTTONMENUITEM	8
+	#define WT_RADIOBUTTON		9
+	#define WT_TEXTFIELD		10
+	#define WT_TOGGLEBUTTON		11
+	#define WT_TABBEDPANE		12
+	#define WT_TOOLBAR		13
+	#define WT_COMBOBOX		14
+	#define WT_SPINNER		15
+
+
+	#define CR_DESKTOP			500
+	#define CR_ACTIVECAPTION		501
+	#define CR_ACTIVECAPTIONTEXT		502
+	#define CR_ACTIVECAPTIONBORDER		503
+	#define CR_INACTIVECAPTION		504
+	#define CR_INACTIVECAPTIONTEXT		505
+	#define CR_INACTIVECAPTIONBORDER	506
+	#define CR_WINDOW			507
+	#define CR_WINDOWBORDER			508
+	#define CR_WINDOWTEXT			509
+	#define CR_MENU				510
+	#define CR_MENUTEXT			511
+	#define CR_TEXT				512
+	#define CR_TEXTTEXT			513
+	#define CR_TEXTHIGHLIGHT		514
+	#define CR_TEXTHIGHLIGHTTEXT		515
+	#define CR_TEXTINACTIVETEXT		516
+	#define CR_CONTROL			517
+	#define CR_CONTROLTEXT			518
+	#define CR_CONTROLHIGHLIGHT		519
+	#define CR_CONTROLLTHIGHLIGHT		520
+	#define CR_CONTROLSHADOW		521
+	#define CR_CONTROLDKSHADOW		522
+	#define CR_SCROLLBAR			523
+	#define CR_INFO				524
+	#define CR_INFOTEXT			525
+
+	#define JPM_ButtonMargin		2000
+	#define JPM_TabBarTabVSpace		2001
+	#define JPM_TabBarTabHSpace		2002
+	#define JPM_MenuButtonIndicator		2003
+	#define JPM_DockWindowSeparatorExtent	2004
+	#define JPM_DockWindowHandleExtent	2005
+	#define JPM_TableHeaderH		2006
+	#define JPM_ButtonH			2007
+	#define JPM_ButtonShiftHorizontal	2008
+	#define JPM_ButtonShiftVertical		2009
+
+	#define JSC_TitleBarSysMenu		5000
+	#define JSC_TitleBarMinButton		5001
+	#define JSC_TitleBarMaxButton		5002
+	#define JSC_TitleBarCloseButton		5003
+	#define JSC_TitleBarLabel		5004
+	#define JSC_TitleBarNormalButton	5005
+	#define JSC_TitleBarShadeButton		5006
+	#define JSC_TitleBarUnshadeButton	5007
+
+
+	#define SZ_MENUBAR		3000
+	#define SZ_HPROGRESSBAR		3001
+	#define SZ_VPROGRESSBAR		3002
+	#define SZ_HSCROLLBAR		3003
+	#define SZ_HSCROLLBARMIN	3004
+	#define SZ_VSCROLLBAR		3005
+	#define SZ_VSCROLLBARMIN	3006
+
+	#define CI_ERROR_ICON		4000
+	#define CI_INFO_ICON		4001
+	#define CI_WARNING_ICON		4002
+	#define CI_QUESTION_ICON	4003
+	#define CI_MAXIMIZE_ICON	4004
+	#define CI_MINIMIZE_ICON	4005
+	#define CI_CLOSE_ICON		4006
+	#define CI_ICONIFY_ICON		4007
+	#define CI_TREEEXPANDER_ON	4008
+	#define CI_TREEEXPANDER_OFF	4009
+	#define CI_TREEBRANCH_H		4010
+	#define CI_TREEBRANCH_V		4011
+#endif

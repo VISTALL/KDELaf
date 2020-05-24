@@ -1,0 +1,4 @@
+Manifest-Version: 1.2
+Created-By: Sekou DIAKITE
+Main-Class: gnu.classpath.examples.swing.Demo
+Class-Path: . 

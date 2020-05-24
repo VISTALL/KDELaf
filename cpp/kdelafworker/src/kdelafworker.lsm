@@ -1,0 +1,16 @@
+Begin3
+Title:          kdelafworker -- Some description
+Version:        alpha
+Entered-date:   
+Description:    
+Keywords:       KDE Qt
+Author:         Sekou DIAKITE <diakite@freeasinspeech.org>
+Maintained-by:  Sekou DIAKITE <diakite@freeasinspeech.org>
+Home-page:      
+Alternate-site: 
+Primary-site:   ftp://ftp.kde.org/pub/kde/unstable/apps/utils
+                xxxxxx  kdelafworker-alpha.tar.gz
+                xxx     kdelafworker-alpha.lsm
+Platform:       Linux. Needs KDE
+Copying-policy: Custom
+End
